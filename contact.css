@@ -1,0 +1,148 @@
+#heading3 a{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    color: #000000;
+}
+.navbar{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    object-fit: cover; 
+    margin-right: 0px;
+    background-color: green;
+    
+}
+.logo{
+    display:flex;
+    gap: 10px;
+    
+}
+.links{
+    display: flex;
+    float:right;
+    gap: 20px;
+    font-size: 17px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.links a{
+    text-decoration: none;
+    color: #000000;
+}
+.links a:hover{
+    translate: 5px;
+    transition-duration:0.5s ;
+    color: #faf3e1;
+}
+.hidden{
+    display: none;
+}
+.toggle_btn.active{
+    color:#ee7432;
+    background-color: #222222;
+}
+
+h2{
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+form{
+    display: flex;
+    display: block;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+   
+}
+.name{
+    padding: 13px;
+    justify-content: center;
+    justify-content: space-between;
+    border-color: #ee7432;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color:  #f5e7c6;
+    outline: none;
+    width: 400px;
+    border: 1px solid #faf3e1; /* make border line thin*/
+
+}
+.toggle_btn{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: #ee7432 ;
+    color: #222222;
+    justify-self: center;
+    padding: 15px;
+    width: 200px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid #222222;
+    
+    
+    
+}
+button{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: #23140c ;
+    color: #ee7432;
+    justify-self: center;
+    padding: 15px;
+    width: 200px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid #222222;
+}
+.name:hover{
+    border-color: #ee7432;
+    
+}
+body{
+    background-color: #faf3e1;
+    justify-content: space-between;
+    margin: 0;
+}
+.personal_details{
+    display: flex;
+    justify-content: center;
+}
+.personal_details button{
+    display: flex;
+    justify-content: center;
+}
+#contact_no{
+    text-align: center;
+}
+.top_buttons{
+    display:flex;
+    display: block;
+    justify-content: center;
+    justify-self: center;
+    margin-bottom: 20px;
+}
+
+footer{
+    margin:0px;
+    text-align: center;
+    margin-top: 90px;
+    background-color: #f5e7c6;
+    padding: 10px 0;
+    margin-left: 0px;
+}
+.socials{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+#settings{
+    text-decoration: none;
+    color: black;
+}
+#textarea{
+    padding-bottom: 20px;
+}
+.question{
+    margin-top: 90px;
+}
+#hours{
+    text-align: center;
+}
+

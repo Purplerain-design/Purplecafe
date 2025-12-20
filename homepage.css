@@ -7,7 +7,7 @@
 }
 .top_bar2{
     /* flex: 1; share space equally */
-    font-size: 13px;
+    font-size: 15px;
     margin-left: auto; /* put it on the right*/
 }
 .delivery_text_bar{
@@ -89,7 +89,6 @@ body{
 }
 
 .navbar{
-    
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -405,11 +404,11 @@ footer{
 .subscription{
     /* background-color:#; */
     
-    padding: 20px;
-    clip-path: ellipse(90% 50% at 50% 50%);
+    padding: 100px;
+    /* clip-path: ellipse(90% 50% at 50% 50%); */
     margin-bottom: 0;
-    background-color: #;
-    
+    background-image: url("Screenshot\ 2025-12-20\ 160056.png" ) ;
+    background-size: cover;
 }
 
 #sub_text{
@@ -425,8 +424,8 @@ footer{
     width: 100px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     justify-self: center;
-    background-color: #ff6d1f;
-    color: #222222;
+    background-color: #222222;
+    color: #ff6d1f;
     
 }
 .credentials{
@@ -436,7 +435,6 @@ footer{
     justify-content: space-between;
     border-color: #faf3e1;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    background-color:  #faf3e1;
     outline: none;
     
 }
@@ -544,23 +542,34 @@ footer{
     display: block;
     justify-items: center;
 } */
-.wholediv{
+.store_btn{  /* inside buttons*/
     display: flex;
-    gap: 0;
+    flex-direction: row;
+    align-items: center;
+    gap:12px;
+    cursor: pointer;
 }
-.btn_img{
-    margin-top: 13px;
+.btn_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
 }
 .btn_txt p{
     font-size: 12px;
+    margin: 0;
 }
-.app button{
-    justify-self: center;
+.btn_txt{
+    display: flex;
+    flex-direction: column; 
+    text-align: left;
+    line-height: 1.2;
 }
-.store{
-    font-size: 20px;
-}
+.btn_txt .store{
+    font-size: 16px;
+} 
 .app_text button{
+    
     color: #222222;
     background-color:#faf3e1 ;
     width: 180px;
@@ -568,6 +577,7 @@ footer{
     justify-content: center;
     border: 1px solid #222222;
 }
+
 #cafetxt1{
     font-size: 70px;
 }
@@ -600,4 +610,15 @@ footer{
     font-size: 15px;
     opacity: 0.7;
     color: #222222;
+}
+.theme{
+    position: absolute;
+    left: 84%;
+    background-color: #ee7432;
+    outline: none;
+    border: 0 solid #000000;
+    border-radius: 100%;
+    padding: 15px;
+    cursor: pointer;
+    
 }

@@ -1,0 +1,33 @@
+.card2{
+    background-color: #ee7432;
+    padding: 300px;
+    color: #ee7432;
+}
+.card1{
+    background-color: #f5e7c6;
+    padding: 300px;
+    
+}
+.cards{
+    text-align: center;
+    opacity: 0.5;
+}
+body{
+    background-color: aqua ;
+    color:  #f5e7c6;
+    margin: 0;
+}
+#purple{
+    font: bold;
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#cardtxt{
+    font: bold;
+    font-size: 100px;
+}
+.blocks{
+    display: flex;
+    margin: 0;
+
+}

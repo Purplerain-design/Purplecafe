@@ -11,13 +11,35 @@
     padding: 20px;
     object-fit: cover; 
     margin-right: 0px;
-    background-color: green;
+    background-color: #f5e7c6;
     
 }
-.logo{
+.top_bar1 a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #f5e7c6;
+    
+}
+.top_bar1{
+    text-align: center;
+    padding: 10px;
+    background-color: #000000;
+}
+.logo a{
     display:flex;
     gap: 10px;
-    
+    text-decoration: none;
+    color: #000000;
+    font: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.login a{
+    text-decoration: none;
+    background-color: #000000;
+    color: #ee7432;
+    padding: 10px;
+    border-radius: 20px;
 }
 .links{
     display: flex;
@@ -42,6 +64,7 @@
 .toggle_btn.active{
     color:#ee7432;
     background-color: #222222;
+    padding: 13px;
 }
 
 h2{
@@ -76,9 +99,7 @@ form{
     font-size: 15px;
     outline: none;
     border: 1px solid #222222;
-    
-    
-    
+    padding: 13px;
 }
 button{
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -90,13 +111,14 @@ button{
     font-size: 15px;
     outline: none;
     border: 1px solid #222222;
+    padding: 13px;
 }
 .name:hover{
     border-color: #ee7432;
     
 }
 body{
-    background-color: #faf3e1;
+    background-color: #ee7432;
     justify-content: space-between;
     margin: 0;
 }
@@ -117,6 +139,7 @@ body{
     justify-content: center;
     justify-self: center;
     margin-bottom: 20px;
+    color: #faf3e1;
 }
 
 footer{

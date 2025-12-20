@@ -56,9 +56,11 @@
                 <a href="faq.html">FAQ</a>
 
             </div>
-
+            <button class="theme"></button>
+            
             <div class="login">
-                <a href="#" id="login_link"><b>Log In</b></a>
+                
+                <a href="loginpage.html" id="login_link"><b>Log In</b></a>
                 <a href="#" id="signup_link"><b>Sign Up</b></a>
             </div>
 
@@ -86,20 +88,20 @@
             <div class="menu" id="card1">
                 <img src="https://cdn-icons-png.flaticon.com/128/37/37908.png"
                     alt="pic" width="100px" >
-                <p>Freshly brewed just for you,<br> Take  coffee aroma with you</p>
+                <p>Freshly brewed just for you,<br>crafted to give you the perfect<br> start to your day</p>
                 <a href="#"> Order Coffee</a>
 
             </div>
             <div class="menu" id="card2">
                 <img src="https://cdn-icons-png.flaticon.com/128/2728/2728807.png"
                     alt="pic" width="100px">
-                <p id="tea">Beat the heat with a splash of <br> cold coffee goodness</p>
+                <p id="tea">From classic black tea to<br> refreshing herbal blends, our tea is<br>gives you comfort in every sip</p>
                 <a href="#"><br>Order Tea</a>
             </div>
 
             <div class="menu" id="card3">
                 <img src="https://cdn-icons-png.flaticon.com/128/10516/10516396.png" alt="pic" width="100px">
-                <p>Freshly baked smiles incoming!<br> Get ready for a treat</p>
+                <p>Treat yourself to our pastries, <br>cakes and sweet treats, perfect for <br>anytime of the day.<br> Order now! </p>
                 <a href="#">Bakery</a>
             </div>
         </div>
@@ -129,6 +131,7 @@
          <!-- <img src="purple.png" alt="" width="400px" height="500px"> -->
 
                 <div class="subscription">
+
                     <p id="sub_text">SUBSCRIBE & ENJOY YOUR <br> FAVOURITE COFFEE AT 30% OFF</p>
 
                     <div class="input_text">
@@ -262,33 +265,46 @@
             <div class="app_text">
                 <p id="cafetxt1">Download our new app!</p>
                 <p id="cafetxt2">Our mobile app is now available for  download, making it easier than ever to enjoy your favourite coffee moments with us.With the app you can <b>browse our menu, place orders quickly, stay updated on new arrivals and special offers.</b>Click the button and have a great coffee.</p>
-                <button>
-                    <div class="wholediv">
-                        <div class="btn_img">
-                        <img src="https://cdn-icons-png.flaticon.com/128/0/747.png" alt="" width="30px">
-                        </div>
 
-                        <div class="btn_txt">
-                        <p>Download on</p><p><b class="store">Apple Store</b></p>
-                        </div>
-                    </div>
-                </button>
-                <button>
+                <div class="btn_wrapper">
+                    <button class="store_btn">
                     
-                    <div class="wholediv">
+                        <div class="btn_img">
+                            <img src="https://cdn-icons-png.flaticon.com/128/0/747.png" alt="" width="30px">
+                        </div>
+
+                        <div class="btn_txt">
+                            <p>Download on</p><p><b class="store">Apple Store</b></p>
+                        </div>
+                
+                    </button>
+                    <button class="store_btn">
+                    
+                    
 
                         <div class="btn_img">
-                        <img src="https://cdn-icons-png.flaticon.com/128/300/300218.png" alt="" width="30px">
+                            <img src="https://cdn-icons-png.flaticon.com/128/300/300218.png" alt="" width="30px">
                         </div>
                         <div class="btn_txt">
-                        <p>Download on</p><p class="store"><b>Google play</b></p>
+                            <p>Download on</p>
+                            <p class="store"><b>Google play</b></p>
                         </div>
-                    </div>
-                </button>
+                    
+                    </button>
+                </div>
             </div>
         </div>
 
-        
+        <div class="theme_btns">
+                <button data-theme="theme1" class="theme_selector" id="one"></button>
+                <button data-theme="theme2" class="theme_selector" id="two"></button>
+                <button data-theme="theme3" class="theme_selector" id="three"></button>
+                <button data-theme="theme4" class="theme_selector" id="four"></button>
+                <button data-theme="theme5" class="theme_selector" id="five"></button>
+                <button data-theme="theme6" class="theme_selector" id="six"></button>
+                
+        </div>
+
         <footer>
             <p>&copy 2025 Purplecafe. All Rights Reserved.<b><a href="#" id="settings">T&C's Apply. Cookie Settings.</a></b></p>
             <div class="socials">
@@ -353,7 +369,7 @@
         setTimeout(function () {
             popup_notification.classList.add("show");
             blurry.classList.add("blurred");
-        },100000000000000);
+        },3000);
 
         close_btn.addEventListener("click", function () {
             popup_notification.classList.remove("show");

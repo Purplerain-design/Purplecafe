@@ -480,7 +480,6 @@ footer{
     cursor: pointer; /*make it clickable*/
     font-size: 25px;
     margin-top: 20px;
-    /* float: right; */
 }
 #popup_text{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -490,7 +489,6 @@ footer{
 #brand_name{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 30px;
-    padding: 
 }
 .popup_information{
     background-color: #f5e7c6;

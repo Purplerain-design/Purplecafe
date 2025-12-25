@@ -609,7 +609,7 @@ footer{
     opacity: 0.7;
     color: #222222;
 }
-.theme{
+#theme{
     position: absolute;
     left: 84%;
     background-color: #ee7432;

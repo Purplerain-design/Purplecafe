@@ -125,7 +125,7 @@ button{
   /* clip-path: ellipse(70% 50% at 20% 60%); */
   color: #f5e7c6;
 }
-#purple{
+#purple {
   font-family:Georgia, 'Times New Roman', Times, serif;
   font: bold;
   font-size: 40px;
@@ -133,6 +133,7 @@ button{
   margin-bottom: 0
   margin-top: 10px;
 }
+
 #logintxt{
 
   font-size: 70px;

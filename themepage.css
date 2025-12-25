@@ -1,6 +1,6 @@
-body .wholecard{
+/* body .wholecard{
     background-color:  #faf3e1;
-}
+} */
 
 #close{
     cursor: pointer; /*make it clickable*/
@@ -8,16 +8,20 @@ body .wholecard{
     margin-top: 15px;
 }
 .wholecard h3{
-    background-color: #ff6d1f;
+    margin-top: 2px;
+    font-size: 15px;
     padding: 7px;
     border-radius: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .theme_card{
     display: grid;
-    grid-template-columns: repeat(3,72px);
+    grid-template-columns: repeat(3,50px);
     gap:16px;
     padding: 40px;
     width: max-content;
+    justify-content: center;
+    align-content: center;
     margin: 0 auto;/*center grid card*/
 
 }
@@ -51,14 +55,17 @@ body .wholecard{
     align-self: center;
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: #000000;
     color: #ff6d1f;
     font: bold;
+}
+.wholecard .top_btn:hover{
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.7);
 }
 .wholecard{
     position: fixed;
     top: 0;
-    right: -320px; /* hide card*/
+    background-color: #ffffff;
+    right: -320px;  /*hide card*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -66,10 +73,9 @@ body .wholecard{
     width: 320px;
     height: 90vh;
     transition: right 0.3s ease;
-}
-.wholecard.show{
 
 }
+
 .c1{background-color: #69212C;}
 .c2{background-color: #dce0e9;}
 .c3{background-color: #8ca2ad;}
@@ -123,9 +129,27 @@ body .wholecard{
 .sidepanel_card{
     transition: transform 0.3s ease;
 }
-.panel_open .wholecard{
+.wholecard.active{ /*card*/
     right: 0;
 }
-.panel_open .sidepanel_card{
-    transform: translateX(-320px); /* move element 320px horizontally*/
+/* .panel_open.{ /*whole website*/
+   /* transform: translateX(-320px);  move element 320px horizontally*/
+    /* transition: transform 0.3s ease; */
+/* } */ 
+/*small tick*/
+.theme_selector::after{
+    content: "✓";
+    position: absolute;
+    color: #d5dddf;
+    top: -6px;
+    right: -6px;
+    width: 16px;
+    height: 16px;
+   font-weight: bold;
+    background-color: #222222;
+    border-radius: 50%;
+    opacity: 0;
+}
+.theme_selector.active::after{
+    opacity: 1;
 }

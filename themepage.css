@@ -1,6 +1,7 @@
-/* body .wholecard{
-    background-color:  #faf3e1;
-} */
+body.active .sidepanel_card{ /* shift the website to the side*/
+    margin-right: 320px;
+    transition: all 0.3s ease;
+} 
 
 #close{
     cursor: pointer; /*make it clickable*/
@@ -13,6 +14,9 @@
     padding: 7px;
     border-radius: 10px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#cafetxt1{
+    text-align: center;
 }
 .theme_card{
     display: grid;
@@ -64,7 +68,7 @@
 .wholecard{
     position: fixed;
     top: 0;
-    background-color: #ffffff;
+    /* background-color:#efdfc5; */
     right: -320px;  /*hide card*/
     display: flex;
     flex-direction: column;
@@ -73,7 +77,7 @@
     width: 320px;
     height: 90vh;
     transition: right 0.3s ease;
-
+    z-index: 1000;
 }
 
 .c1{background-color: #69212C;}
@@ -128,6 +132,7 @@
 
 .sidepanel_card{
     transition: transform 0.3s ease;
+    transition: all 0.3s ease;
 }
 .wholecard.active{ /*card*/
     right: 0;
@@ -153,3 +158,69 @@
 .theme_selector.active::after{
     opacity: 1;
 }
+
+:root{
+    --bg-main: #f3e7ca;
+    --bg-nav: #000000;
+    --bg-cards: #f5e7c6;
+    --bg-sections: #222222;
+    --accent:  #ee7432;
+
+}
+
+
+[date-theme="theme1"]{
+    --bg-main: #69212C;
+    --bg-cards: #f5e7c6;
+    --bg-sections: #dce0e9;
+    --accent:  #27353e;
+}
+[date-theme="theme2"]{
+    --bg-main: #b51a28;
+    --bg-cards:  #f5e7c6;
+    --bg-sections:#ffa586;
+    --accent:  #384358;
+}
+[date-theme="theme3"]{
+    --bg-main: #380f17;
+    --bg-cards:  #8f0b13;
+    --bg-sections: #efdfc5;
+    --accent: #252b2b;
+}
+[date-theme="theme4"]{
+    --bg-main: #d5dddf;
+    --bg-cards: #b2c582;
+    --bg-sections: #688e4e;
+    --accent:  #3c5148;
+}
+[date-theme="theme5"]{
+    --bg-main: #748757;
+    --bg-cards: #391f0b;
+    --bg-sections: #816856;
+    --accent: #ddd5cc;
+}
+[date-theme="theme6"]{
+    --bg-main: #eae0d2;
+    --bg-cards: #a68763;
+    --bg-sections:  #d7c9ae;
+    --accent:  #2d2d2d;
+}
+[date-theme="theme7"]{
+    --bg-main: #ef007e;
+    --bg-cards: #dce0e9;
+    --bg-sections: #ff58ae;
+    --accent:  #222222;
+}
+[date-theme="theme8"]{
+    --bg-main: #4b5945;
+    --bg-cards: #66785f;
+    --bg-sections: #222222;
+    --accent:  #91ac8f;
+}
+[date-theme="theme9"]{
+    --bg-main:#faf3e1;
+    --bg-cards:  #f5e7c6;
+    --bg-sections:#ecb176;
+    --accent:  #222222;
+}
+

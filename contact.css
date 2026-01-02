@@ -1,7 +1,7 @@
 #heading3 a{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
-    color: #000000;
+    color: var(--bg-nav-color);
 }
 .navbar{
     
@@ -11,33 +11,33 @@
     padding: 20px;
     object-fit: cover; 
     margin-right: 0px;
-    background-color: #f5e7c6;
+    background-color: var(--bg-cards-color);
     
 }
 .top_bar1 a{
     text-decoration: none;
     font-size: 15px;
-    color: #f5e7c6;
+    color: var(--bg-cards-color);
     
 }
 .top_bar1{
     text-align: center;
     padding: 10px;
-    background-color: #000000;
+    background-color: var(--bg-nav-color);
 }
 .logo a{
     display:flex;
     gap: 10px;
     text-decoration: none;
-    color: #000000;
+    color: var(--bg-nav-color);
     font: bold;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
 .login a{
     text-decoration: none;
-    background-color: #000000;
-    color: #ee7432;
+    background-color: var(--bg-nav-color);
+    color:var(-accent-color);
     padding: 10px;
     border-radius: 20px;
 }
@@ -51,19 +51,19 @@
 }
 .links a{
     text-decoration: none;
-    color: #000000;
+    color: var(--bg-nav-color);
 }
 .links a:hover{
     translate: 5px;
     transition-duration:0.5s ;
-    color: #faf3e1;
+    color: var(--bg-main-color);
 }
 .hidden{
     display: none;
 }
 .toggle_btn.active{
-    color:#ee7432;
-    background-color: #222222;
+    color:var(--accent-color);
+    background-color: var(--bg-sections-color);
     padding: 13px;
 }
 
@@ -81,44 +81,44 @@ form{
     padding: 13px;
     justify-content: center;
     justify-content: space-between;
-    border-color: #ee7432;
+    border-color:var(-accent-color);
     font-family:Georgia, 'Times New Roman', Times, serif;
-    background-color:  #f5e7c6;
+    background-color:  var(--bg-cards-color);;
     outline: none;
     width: 400px;
-    border: 1px solid #faf3e1; /* make border line thin*/
+    border: 1px solid var(--bg-main-color); /* make border line thin*/
 
 }
 .toggle_btn{
     font-family:Georgia, 'Times New Roman', Times, serif;
-    background-color: #ee7432 ;
-    color: #222222;
+    background-color:var(-accent-color) ;
+    color: var(--bg-sections-color);
     justify-self: center;
     padding: 15px;
     width: 200px;
     font-size: 15px;
     outline: none;
-    border: 1px solid #222222;
+    border: 1px solid var(--bg-sections-color);
     padding: 13px;
 }
 button{
     font-family:Georgia, 'Times New Roman', Times, serif;
-    background-color: #23140c ;
-    color: #ee7432;
+    background-color: var(--bg-nav-color);
+    color:var(-accent-color);
     justify-self: center;
     padding: 15px;
     width: 200px;
     font-size: 15px;
     outline: none;
-    border: 1px solid #222222;
+    border: 1px solid var(--bg-sections-color);
     padding: 13px;
 }
 .name:hover{
-    border-color: #ee7432;
+    border-color:var(-accent-color);
     
 }
 body{
-    background-color: #ee7432;
+    background-color:var(-accent-color);
     justify-content: space-between;
     margin: 0;
 }
@@ -139,14 +139,14 @@ body{
     justify-content: center;
     justify-self: center;
     margin-bottom: 20px;
-    color: #faf3e1;
+    color: var(--bg-main-color);
 }
 
 footer{
     margin:0px;
     text-align: center;
     margin-top: 90px;
-    background-color: #f5e7c6;
+    background-color: var(--bg-cards-color);;
     padding: 10px 0;
     margin-left: 0px;
 }

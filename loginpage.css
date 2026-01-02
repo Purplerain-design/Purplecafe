@@ -1,11 +1,11 @@
 body{
-  background-color:#ff6d1f; 
+  background-color:var(--accent-color); 
   margin: 0;
   padding: 0;
 }
 .login_div{
   margin: 0;
-  background-color:  #f5e7c6;
+  background-color:  var(--bg-cards-color);
   width: 410px;
   height: 585px;
   text-align: center;
@@ -35,7 +35,7 @@ h2{
   content: "";
   align-self: center;
   width: 70px;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid var( --bg-nav-color);
   
 }
 .login_text::before{
@@ -67,7 +67,7 @@ h2{
 #username{
   border-radius: 0;
   padding: 10px;
-  border: 1px solid #faf3e1;
+  border: 1px solid var(--bg-main-color);
   outline: none;
   width: 220px;
   
@@ -79,7 +79,7 @@ h2{
   margin-bottom:3px;
 }
 #username:hover{
-  border-color: #ff6d1f;
+  border-color: var(--accent-color);
 }
 .cred{
   display: flex;
@@ -93,9 +93,9 @@ button{
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   width: 240px;
   border-radius: 10px;
-  color:#ff6d1f;
-  outline: #ff6d1f;
-  background-color: #000000;
+  color:var(--accent-color);
+  outline: var(--accent-color);
+  background-color: var( --bg-nav-color);
   margin-top: 30px;
 }
 .icons{
@@ -108,13 +108,13 @@ button{
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   width: 240px;
   border-radius: 10px;
-  color:#ff6d1f;
+  color:var(--accent-color);
   outline:none;
   background-color: white;
   margin-top: 20px;
-  color: #000000;
+  color: var( --bg-nav-color);
   opacity: 0.8;
-  border: 1px solid #222222;
+  border: 1px solid var(--bg-sections-color);
   margin-top: 7px;
 }
 .mug img{
@@ -123,14 +123,14 @@ button{
 }
 .mug{
   /* clip-path: ellipse(70% 50% at 20% 60%); */
-  color: #f5e7c6;
+  color: var(--bg-cards-color);
 }
 #purple {
   font-family:Georgia, 'Times New Roman', Times, serif;
   font: bold;
   font-size: 40px;
   text-align: center;
-  margin-bottom: 0
+  margin-bottom: 0;
   margin-top: 10px;
 }
 

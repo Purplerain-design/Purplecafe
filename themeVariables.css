@@ -1,0 +1,63 @@
+:root{
+    --bg-main-color: #faf3e1;
+    --bg-nav-color: #000000;
+    --bg-cards-color: #f5e7c6;
+    --bg-sections-color: #222222;
+    --accent-color:  #ee7432;
+}
+
+
+[data-theme="theme1"]{
+    --bg-main-color: #44a6b5;
+    --bg-cards-color: #004554;
+    --bg-sections-color: #e9f1f6;
+    --accent-color:  #b2d5e2;
+}
+[data-theme="theme2"]{
+    --bg-main-color: #d1c0ec;
+    --bg-cards-color:  #c4addd;
+    --bg-sections-color:#44334a;
+    --accent-color:  #8d77a8;
+}
+[data-theme="theme3"]{
+    --bg-main-color:#ffaf00 ;
+    --bg-cards-color:  #e4e4e4;
+    --bg-sections-color:#1a5d94;
+    --accent-color: #142143;
+}
+[data-theme="theme4"]{
+    --bg-main-color: #d5dddf;
+    --bg-cards-color: #b2c582;
+    --bg-sections-color: #688e4e;
+    --accent-color:  #3c5148;
+}
+[data-theme="theme5"]{
+    --bg-main-color: #748757;
+    --bg-cards-color: #391f0b;
+    --bg-sections-color: #816856;
+    --accent-color: #ddd5cc;
+}
+[data-theme="theme6"]{
+    --bg-main-color: #eae0d2;
+    --bg-cards-color: #a68763;
+    --bg-sections-color:  #d7c9ae;
+    --accent-color:  #2d2d2d;
+}
+[data-theme="theme7"]{
+    --bg-main-color: #ef007e;
+    --bg-cards-color: #dce0e9;
+    --bg-sections-color: #ff58ae;
+    --accent-color:  #222222;
+}
+[data-theme="theme8"]{
+    --bg-main-color: #4b5945;
+    --bg-cards-color: #66785f;
+    --bg-sections-color: #222222;
+    --accent-color:  #91ac8f;
+}
+[data-theme="theme9"]{
+    --bg-main-color:#faf3e1;
+    --bg-cards-color:  #f5e7c6;
+    --bg-sections-color:#ecb176;
+    --accent-color:  #222222;
+}

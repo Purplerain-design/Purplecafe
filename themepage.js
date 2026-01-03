@@ -4,14 +4,19 @@ let wholecard = document.querySelector(".wholecard");
 let palette_btns = document.querySelectorAll(".theme_selector");
 
 // make card popup on the side
-theme_btn.addEventListener("click", function(){
+if(theme_btn && wholecard){
+    theme_btn.addEventListener("click", function(){
     wholecard.classList.add("active");
     document.body.classList.add("active");
 });
-close_btn2.addEventListener("click", function(){
+}
+if(close_btn2 && wholecard){
+    close_btn2.addEventListener("click", function(){
     wholecard.classList.remove("active");
-    document.body.classList.remove("active")
-})
+    document.body.classList.remove("active");
+});
+}
+
 // save theme even after page refresh
 let savedTheme = localStorage.getItem("theme");
 if(savedTheme){

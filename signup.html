@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up</title>
 
+	<link rel="stylesheet" href="themeVariables.css">
     <link rel="stylesheet" href="signup.css">
 </head>
 <body>
@@ -25,38 +26,21 @@
 				</div>
 
 				<div class="cred_input">
+					<label for="email" id="email_label">Email*</label>
+					<input type="email" id="username" placeholder="example@gmail.com" required><br>
+			
+				</div><br>
+
+				<div class="cred_input">
 					<label for="Password" id="pass_label">Password*</label>
 					<input type="password" id="username" placeholder="Enter your password" required>
 			
 				</div>
 			</div>
 
-			<div class="pass">
-				<label for="remember">
-				<input type="checkbox" id="checkbox">Remember me
-				</label>
-				<a href="#">Forgot password?</a>
-			</div>
+			
 
-			<button>Sign in</button>
-
-		
-			<div class="icons">
-
-				<p class="login_text">Log in with</p>
-
-				<button>
-					<img src="https://cdn-icons-png.flaticon.com/128/2702/2702602.png" alt="" width="17px" class="icon">  Continue with Google
-				</button>
-				<button>
-					<img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="" width="17px" class="icon">  Continue with Apple
-				</button>
-
-			</div>
-
-			<div>
-				<p>Dont have an account? <a href="#">Sign up</a></p>
-			</div>
+			<button>Sign up</button>
    		</div>
 
     	<div class="mug">
@@ -67,5 +51,8 @@
 		</div>
 
 	</div>
+	<script src="themepage.js" defer>
+		//link themepage js file
+	</script> 
 </body>
 </html>

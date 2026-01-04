@@ -1,18 +1,18 @@
 #heading3 a{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
-    color: #000000;
+    color: var(--bg-nav-color);
     text-align: center;
 }
 .top_bar1 a{
     text-decoration: none;
     font-size: 15px;
-    color: #f5e7c6;
+    color:var(--bg-cards-color);
 }
 .top_bar1{
     text-align: center;
     padding: 10px;
-    background-color: #000000;
+    background-color: var(--bg-nav-color);
 }
 .navbar{
     
@@ -22,14 +22,14 @@
     padding: 20px;
     object-fit: cover; 
     margin: 0;
-    background-color: #f5e7c6;
+    background-color:var(--bg-cards-color);
     
 }
 .logo a{
     display:flex;
     gap: 10px;
     text-decoration: none;
-    color: #000000;
+    color: var(--bg-nav-color);
     font: bold;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
@@ -44,33 +44,33 @@
 }
 .login a{
     text-decoration: none;
-    background-color: #000000;
-    color: #ee7432;
+    background-color: var(--bg-nav-color);
+    color: var(--accent-color);
     padding: 10px;
     border-radius: 20px;
 }
 .links a{
     text-decoration: none;
-    color: #000000;
+    color: var(--bg-nav-color);
     transition: transform 0.5s ease;
 }
 .links a:hover{
     translate: 5px;
     transition-duration:0.5s ;
-    color: #faf3e1;
+    color: var(--bg-main-color);
 }
 
 body{
-    background-color:#ee7432;
+    background-color:var(--accent-color);
     margin: 0;
 }
 .color a{
-    color: #f5e7c6;
+    color:var(--bg-cards-color);
 }
 .faqs{
 
     justify-content: center;
-    background-color: #f5e7c6;
+    background-color:var(--bg-cards-color);
     padding: 20px;
     margin-left: 100px;
     margin-right: 100px;
@@ -81,9 +81,9 @@ body{
     transform: 30px;
 }
 details{
-    border: 0.5px solid  #e0a50f;
+    border: 0.5px solid  var(--accent-color);
     padding: 10px;
-    background-color: #faf3e1;
+    background-color: var(--bg-main-color);
     
 }
 
@@ -91,7 +91,7 @@ footer{
     margin:0px;
     text-align: center;
     margin-top: 90px;
-    background-color: #f5e7c6;
+    background-color:var(--bg-cards-color);
     padding: 10px 0;
     margin-left: 0px;
 }
@@ -102,10 +102,21 @@ footer{
 }
 #settings{
     text-decoration: none;
-    color: black;
+    color: var(--bg-nav-color);
 }
 .contact_cafe{
     text-align: center;
     margin-top: 100px;
     font-size: 20px;
+}
+#theme{
+    position: absolute;
+    left: 84%;
+    background-color: var( --accent-color );
+    outline: none;
+    border: 0 solid var( --bg-nav-color);
+    border-radius: 100%;
+    padding: 15px;
+    cursor: pointer;
+    
 }

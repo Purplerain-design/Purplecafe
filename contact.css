@@ -94,7 +94,6 @@ form{
     background-color:var(--accent-color);
     color: var(--bg-sections-color);
     justify-self: center;
-    padding: 15px;
     width: 200px;
     font-size: 15px;
     outline: none;
@@ -167,5 +166,17 @@ footer{
 }
 #hours{
     text-align: center;
+}
+#theme{
+    position: absolute;
+    left: 84%;
+    background-color: var( --accent-color );
+    outline: none;
+    border: 0 solid var( --bg-nav-color);
+    border-radius: 100%;
+    padding: 15px;
+    cursor: pointer;
+    width: 20px;
+    
 }
 

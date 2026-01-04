@@ -109,3 +109,14 @@ footer{
     margin-top: 100px;
     font-size: 20px;
 }
+#theme{
+    position: absolute;
+    left: 84%;
+    background-color: var( --accent-color );
+    outline: none;
+    border: 0 solid var( --bg-nav-color);
+    border-radius: 100%;
+    padding: 15px;
+    cursor: pointer;
+    
+}

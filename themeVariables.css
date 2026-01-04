@@ -46,8 +46,8 @@
 [data-theme="theme7"]{
     --bg-main-color: #ef007e;
     --bg-cards-color: #dce0e9;
-    --bg-sections-color: #ff58ae;
-    --accent-color:  #222222;
+    --bg-sections-color:#222222 ;
+    --accent-color:  #ff58ae;
 }
 [data-theme="theme8"]{
     --bg-main-color: #4b5945;

@@ -306,7 +306,7 @@ footer{
 }
 .cust_reviews{
     /* clip-path: ellipse(100% 60% at 50% 50%); */
-    background-color:var(--bg-sections-color);
+    background-color:var(--bg-main-color);
     display: flex;
     justify-content: space-between;
     padding: 80px;
@@ -402,42 +402,61 @@ footer{
 } */
 
 .subscription{
-    /* background-color:#; */
-    
-    padding: 100px;
-    /* clip-path: ellipse(90% 50% at 50% 50%); */
     margin-bottom: 0;
-    background-image: url("Screenshot\ 2025-12-20\ 160056.png" ) ;
-    background-size: cover;
 }
 
 #sub_text{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font:bold;
     display: flex;
-    justify-self: center;
+    font-size: 50px;
     text-align: center;
+
 }
 .sub_button{
     display: block;
     margin-top: 20px;
     height: 40px;
-    width: 100px;
+    width: 110px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     justify-self: center;
     background-color: var( --bg-sections-color);
     color: var( --accent-color );
+    border-radius: 30px;
+    border: 2px solid var( --accent-color );
     
 }
+ 
 .credentials{
     display: flex;
     border: 1px solid;
-    padding: 10px;
-    justify-content: space-between;
+    padding: 5px;
     border-color:var( --bg-main-color );
     font-family:Georgia, 'Times New Roman', Times, serif;
     outline: none;
+    height: 30px;
+    width: 300px;
+    margin-top: 4px;
+    margin-bottom: 0;
     
 }
+.sub-wholediv {
+    margin-bottom: 0;
+    display: flex;
+    background-color:var(--bg-cards-color);
+    align-items: center;
+      
+}
+.sub-image img{
+    height: 500px;
+    width: 500px;
+    margin-bottom: 0;
+    
+}
+.sub-image{
+    margin: 0;
+}
+
+
 .credentials:hover{
     border-color: var( --accent-color );
     
@@ -447,9 +466,7 @@ footer{
     display: flex;
     margin-top: 20px;
     justify-content: center;
-    gap: 20px;
-   
-    
+
 }
 .field{
     display: flex;

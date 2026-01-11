@@ -107,6 +107,7 @@ footer{
     gap: 5%;
     margin-top: 60px;
     margin-left: 20px;
+    
 }
 .cafe-house img{
     height:400px;
@@ -152,16 +153,16 @@ footer{
 }
 .cafe-story{
     display: flex;
-    gap: 15px;
+    gap: 55px;
     padding: 40px;
     margin-bottom: 0;
     margin-top: 20px;
 }
 .owner img{
-    width: 350px;
-    height: 400px;
-    margin: 20px;
+    width: 300px;
+    height: 350px;
     border-radius: 20px;
+    margin-top: 90px;
 }
 #brand-owner{
     text-align: center;
@@ -177,11 +178,10 @@ footer{
     
 }
 .cafe p{
-    margin: 0;
-    padding: 0;
+    
 }
 .cafe{
-    padding: 0;
+    margin-bottom: 0;
 }
 
 

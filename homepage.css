@@ -282,7 +282,7 @@ footer{
     
     height: 30px;
     width: 80px;
-    background-color: var( --bg-sections-color);
+    background-color: var(--bg-sections-color);
     color: var( --accent-color );
     border-radius: 5px;
     justify-self: center;

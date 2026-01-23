@@ -6,7 +6,6 @@
     left: 43%;
 }
 .top_bar2{
-    /* flex: 1; share space equally */
     font-size: 15px;
     margin-left: auto; /* put it on the right*/
 }
@@ -31,6 +30,19 @@
     color: var( --accent-color );
     padding: 10px;
     border-radius: 20px;
+    transition: background-color 0.3s;
+    display: flex;
+
+}
+.login a:hover{
+    opacity: 0.9;
+}
+.login{
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    justify-content: space-between;
+   
 }
 #login_btn{
     opacity: 80%;
@@ -45,16 +57,16 @@
 
 .links{
     display: flex;
-    float:right;
-    gap: 20px;
+    gap: 30px;
     font-size: 17px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
+   
 
 }
 .links a{
     text-decoration: none;
     color: var( --bg-nav-color);
+    position: relative;
 }
 /* @media (min-width: 400px) {
     .links{
@@ -75,6 +87,20 @@
     
 }
 
+#theme{
+    background-color: var( --accent-color );
+    outline: none;
+    border: 0 solid var( --bg-nav-color);
+    border-radius: 100%;
+    padding: 15px;
+    cursor: pointer;
+    
+}
+/* .nav-menu{
+    display: flex;
+    align-items: center;
+} */
+
 body{
     background-color:var( --bg-main-color );
     margin: 0;
@@ -92,10 +118,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
     justify-items: center;
-    object-fit: cover; 
-    margin-right: 0px;
+    padding: 20px;
+    position: relative;
     
 }
 #welcometext{
@@ -180,6 +205,14 @@ body{
 .menu:hover{
     translate: 1px;
     transition-duration: 0.2s;
+    
+}
+.cards-heading{
+    text-align: center;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    padding-top: 10px;
     
 }
 .menu img{
@@ -462,6 +495,8 @@ footer{
 }
 .sub-image{
     margin: 0;
+    padding: 0;
+    display: flex;
 }
 
 
@@ -634,14 +669,9 @@ footer{
     opacity: 0.7;
     color: var( --bg-sections-color);
 }
-#theme{
-    position: absolute;
-    left: 84%;
-    background-color: var( --accent-color );
-    outline: none;
-    border: 0 solid var( --bg-nav-color);
-    border-radius: 100%;
-    padding: 15px;
-    cursor: pointer;
-    
+
+.weather{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color:var( --bg-cards-color );
 }

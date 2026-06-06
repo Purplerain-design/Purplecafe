@@ -9,12 +9,17 @@ body{
   width: 410px;
   height: 585px;
   text-align: center;
-  
+  /* Round corners */
+  border-radius: 14px;
 }
 .web_div{
   display: flex;
-  /* justify-content: space-between; */
   gap: 150px;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 18px;
+  box-sizing: border-box;
 }
 h2{
   margin-top: 0;
@@ -70,7 +75,21 @@ h2{
   border: 1px solid var(--bg-main-color);
   outline: none;
   width: 220px;
-  
+}
+
+
+#password{
+  border-radius: 0;
+  padding: 10px;
+  border: 1px solid var(--bg-main-color);
+  outline: none;
+  width: 220px;
+}
+
+/* hover state for both inputs */
+#username:hover,
+#password:hover{
+  border-color: var(--accent-color);
 }
 #user_label{
   margin-bottom:3px;
@@ -150,6 +169,7 @@ button{
   color: var(--bg-cards-color);
   align-items: center;
   margin-top: 100px;
+  border-radius: 14px;
 }
 #purple {
   font-family:Georgia, 'Times New Roman', Times, serif;
@@ -168,7 +188,4 @@ button{
 .line{
   background-color: #ddd;
   margin-top: 5px;
-}
-#checkbox{
-
 }

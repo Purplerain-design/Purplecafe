@@ -1,132 +1,177 @@
-body{
-  background-color:var(--accent-color); 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
   margin: 0;
   padding: 0;
 }
-.login_div{
+
+body{
+  background-color: var(--accent-color);
   margin: 0;
-  padding-top: 60px;
-  background-color:  var(--bg-cards-color);
-  width: 410px;
-  height: 585px;
-  text-align: center;
-  
+  padding: 0;
 }
+
 .web_div{
   display: flex;
-  /* justify-content: space-between; */
   gap: 150px;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
 }
+
+.login_div{
+  margin: 0;
+  padding: 36px 28px;
+  background-color: var(--bg-cards-color);
+  width: 410px;
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+}
+
 h2{
   margin-top: 0;
   text-align: center;
   font-size: 30px;
-  padding: 20px;
-  margin-bottom: 5px;
+  padding: 8px 0 12px 0;
+  margin-bottom: 6px;
+}
 
-}
 #text{
-  margin-bottom:20px;
+  margin-bottom: 18px;
+  color: inherit;
+  font-size: 0.95rem;
 }
+
 .login_text{
   display: flex;
   justify-content: center;
+  align-items: center;
 }
+
 .login_text::before, .login_text::after{
   content: "";
-  align-self: center;
   width: 70px;
   border-bottom: 1px solid var(--bg-nav-color);
-  
 }
+
 .login_text::before{
   margin-right: 10px;
 }
 .login_text::after{
   margin-left: 10px;
 }
+
 .pass{
   display: flex;
-  justify-content: center;
-  justify-items: center;
+  justify-content: space-between;
   gap: 20px;
   font-size: 15px;
-  margin-top: 2px;
-}
-.cred_input label{ /*stacked input and labels*/
-  display: flex;
-  
-}
-.cred_input{
-  display: flex;
-  display: block;
-  font-weight: bold;
+  margin-top: 8px;
   align-items: center;
-  
-  
 }
-#username{
-  border-radius: 0;
+
+.cred_input label{
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.cred_input{
+  width: 100%;
+  display: block;
+  font-weight: normal;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+#username,
+#email,
+#password {
+  border-radius: 6px;
   padding: 10px;
   border: 1px solid var(--bg-main-color);
   outline: none;
-  width: 220px;
-  
+  width: 100%;
+  max-width: 360px;
+  display: block;
+  box-sizing: border-box;
 }
-#email_label{
-  margin-bottom:3px;
-}
-#user_label{
-  margin-bottom:3px;
-}
-#pass_label{
-  margin-bottom:3px;
-}
+
 #username:hover{
   border-color: var(--accent-color);
 }
+
 .cred{
-  display: flex;
   display: block;
-  justify-items: center;
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
 }
 
 button{
   justify-self: center;
   padding: 10px;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   width: 240px;
   border-radius: 10px;
-  color:var(--accent-color);
-  outline: var(--accent-color);
+  color: var(--accent-color);
   background-color: var(--bg-nav-color);
-  margin-top: 30px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.06);
 }
 
 .mug img{
   margin-bottom: 0;
-  margin-top: 200px;
+  margin-top: 0;
 }
+
 .mug{
-  /* clip-path: ellipse(70% 50% at 20% 60%); */
   color: var(--bg-cards-color);
   align-items: center;
-  margin-top: 100px;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  max-width: 480px;
 }
+
 #purple{
-  font-family:Georgia, 'Times New Roman', Times, serif;
-  font: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 700;
   font-size: 40px;
   text-align: center;
-  margin-bottom: 15px;
-  margin-top: 10px;
+  margin: 6px 0 12px;
 }
-#logintxt{
 
-  font-size: 70px;
+#logintxt{
+  font-size: clamp(20px, 6vw, 70px);
   text-align: center;
+  margin: 0;
+  line-height: 1.05;
 }
+
 .line{
   background-color: var(--bg-main-color);
-  margin-top: 5px;
+  margin-top: 8px;
+  width: 56px;
+  height: 3px;
+  border-radius: 6px;
+}
+#log{
+  display: inline-block;
+  margin-top: 1px;
+  font-size: 0.9rem;
 }

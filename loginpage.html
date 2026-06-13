@@ -5,72 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
 
-	<link rel="stylesheet" href="themeVariables.css">
+    <link rel="stylesheet" href="themeVariables.css">
     <link rel="stylesheet" href="loginpage.css">
 </head>
 <body>
 
-	<div class="web_div">
+    <div class="web_div">
 
-   		<div class="login_div">
-		
+        <div class="login_div">
 
-			<h2>Welcome back!</h2>
-			<p id="text">Sign in to get access to unlimited coffee</p>
+            <h2>Welcome back!</h2>
+            <p id="text">Sign in to get access to unlimited coffee</p>
 
-			<div class="cred">
+            <form class="cred" action="#" method="post" novalidate>
+                <div class="cred_input">
+                    <label for="username" id="user_label">Username*</label>
+                    <input type="text" id="username" name="username" placeholder="username" required>
+                </div>
 
-				<div class="cred_input">
-					<label for="Username" id="user_label">Username*</label>
-					<input type="text" id="username" placeholder="username" required><br><br>
-				</div>
+                <div class="cred_input">
+                    <label for="password" id="pass_label">Password*</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
 
-				<div class="cred_input">
-					<label for="Password" id="pass_label">Password*</label>
-					<input type="password" id="username" placeholder="Enter your password" required>
-			
-				</div>
-			</div>
+                <div class="pass">
+                    <label for="remember">
+                        <input type="checkbox" id="remember" name="remember"> Remember me
+                    </label>
+                    <a href="#" class="forgot">Forgot password?</a>
+                </div>
 
-			<div class="pass">
-				<label for="remember">
-				<input type="checkbox" id="checkbox">Remember me
-				</label>
-				<a href="#">Forgot password?</a>
-			</div>
+                <button type="submit">Sign in</button>
+            </form>
 
-			<button>Sign in</button>
+            <div class="icons">
+                <p class="login_text">Log in with</p>
 
-		
-			<div class="icons">
+                <button class="login_btn" type="button">
+                    <img src="https://cdn-icons-png.flaticon.com/128/2702/2702602.png" alt="Google" width="17" class="icon"> Continue with Google
+                </button>
+                <button class="login_btn" type="button">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple" width="17" class="icon"> Continue with Apple
+                </button>
+            </div>
 
-				<p class="login_text">Log in with</p>
+            <div>
+                <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+            </div>
+        </div>
 
-				<button class="login_btn">
-					<img src="https://cdn-icons-png.flaticon.com/128/2702/2702602.png" alt="" width="17px" class="icon">  Continue with Google
-				</button>
-				<button class="login_btn">
-					<img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="" width="17px" class="icon">  Continue with Apple
-				</button>
+        <!-- <div class="mug">
+            <p id="purple">Purplecafe.</p>
+            <hr class="line">
+            <p id="logintxt">Connecting people <br>together with a cup <br>of Coffee</p>
+        </div> -->
 
-			</div>
+    </div>
 
-			<div>
-				<p>Dont have an account? <a href="#">Sign up</a></p>
-			</div>
-   		</div>
-
-    	<div class="mug">
-			<p id="purple">Purplecafe.</p> 
-			<hr class="line">
-			<p id="logintxt">Connecting people <br>together with a cup <br>of Coffee</p>
-			
-		</div>
-
-	</div>
-
-	<script src="themepage.js" defer>
-		//link themepage js file
-	</script> 
+    <script src="themepage.js" defer></script>
 </body>
 </html>
